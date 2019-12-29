@@ -59,6 +59,7 @@ def init():
      format=LOGGING_FORMAT, level=logging.INFO)
 
     #setting up bot inst
+    TELEGRAM_TOKEN = os.environ.get("TOKEN")
     bt = Bot(token = TELEGRAM_TOKEN)
     ClUs.user.set_bot(bt)
 
@@ -1230,6 +1231,7 @@ if (__name__ == "__main__"):
     global tw
     tw, bt, db = init()
     #setup updater and dispatcher
+    TELEGRAM_TOKEN = os.environ.get("TOKEN")
     updater = Updater(token = TELEGRAM_TOKEN)
     dispatcher = updater.dispatcher
 
