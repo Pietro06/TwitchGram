@@ -56,8 +56,8 @@ def init():
     dt = datetime.datetime.now()
     fn = dt.strftime(DAYTIME_STRING) + ".log"
     logging.basicConfig(filename="logs/" + fn, filemode = 'w',
-     format=LOGGING_FORMAT, level=logging.INFO)
-
+     formato = LOGGING_FORMAT , livello = registrazione . INFO )
+TELEGRAM_TOKEN=os.environ.get(1002759418:AAH6il_Ui-ueKBPvUrhhT2Q9v-vOzvtQ1wg)
     #setting up bot inst
     bt = Bot(token = TELEGRAM_TOKEN)
     ClUs.user.set_bot(bt)
@@ -1230,6 +1230,7 @@ if (__name__ == "__main__"):
     global tw
     tw, bt, db = init()
     #setup updater and dispatcher
+    TELEGRAM_TOKEN=os.environ.get(1002759418:AAH6il_Ui-ueKBPvUrhhT2Q9v-vOzvtQ1wg)
     updater = Updater(token = TELEGRAM_TOKEN)
     dispatcher = updater.dispatcher
 
